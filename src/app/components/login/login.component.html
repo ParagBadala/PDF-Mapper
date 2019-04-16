@@ -1,0 +1,91 @@
+<div id="main">
+  <div class="heading">
+    <div class="wordart italic-outline"><span class="text">Medical Summary Portal</span></div>
+  </div>
+  <!-- <div id="wrapper" class="container">
+    <div class="card">
+      <div class="card-body">
+        <form #signInForm="ngForm" (ngSubmit)="signInForm.valid && onSubmit(signInForm)">
+
+          <div class="col">
+            <b>User ID:</b>
+            <input type="text" name="uname" #Name="ngModel" [(ngModel)]="model.username" placeholder="Username"
+              required [ngClass]="{'invalid-textbox' :signInForm.submitted && !Name.valid }">
+          </div>
+
+          <div>
+            <b>Password:</b>
+            <input type="password" name="password" #Pass="ngModel" [(ngModel)]="model.password" placeholder="Password"
+              required [ngClass]="{'invalid-textbox' :signInForm.submitted && !Pass.valid }">
+          </div>
+
+          <div class="form-button">
+            <button type="submit" class="btn btn-md">Login</button>
+            &nbsp;
+            <button type="reset" class="btn btn-md">Reset</button>
+          </div>
+
+          <div *ngIf="!(signInForm.value.uname && signInForm.value.password) && (Name.touched || Pass.touched)">
+            <span class="error"><sup>*</sup>Username and password is required</span>
+          </div>
+
+          <div *ngIf="!isValid">
+              <span class="error"><sup>*</sup>Username and password is incorrect</span>
+          </div>
+
+        </form>
+      </div>
+    </div>
+
+
+  </div> -->
+  <div id="wrapper" class="row">
+    <div class="col-lg-4 col-md-4 col-sm-6 col-10 offset-lg-4 offset-md-4 offset-sm-3 offset-1">
+      <div class="card">
+        <div class="card-body">
+          <!-- Sign in panel -->
+          <div class="sign-in-panel">
+            <i class="fas fa fa-user fa-3x sign-in-icon"></i>
+          </div>
+          <!-- Sign in panel -->
+          <!-- Name form -->
+          <form #signInForm="ngForm" (ngSubmit)="signInForm.valid && onSubmit(signInForm)">
+            <div class="input-group first-input">
+              <div class="input-group-prepend">
+                <div class="input-group-text"><i class="fas fa fa-user"></i></div>
+              </div>
+              <input type="text" class="form-control" name="uname" #Name="ngModel" [(ngModel)]="model.username"
+                placeholder="Username" autocomplete="off" autofocus required
+                [ngClass]="{'invalid-textbox' :signInForm.submitted && !Name.valid }">
+              <div *ngIf="signInForm.submitted && Name.errors">
+                <label class="validation-message text-danger">Username Required</label>
+              </div>
+            </div>
+            <!-- Name form -->
+            <!-- Password form -->
+            <div class="input-group last-input">
+              <div class="input-group-prepend">
+                <div class="input-group-text"><i class="fas fa fa-lock"></i></div>
+              </div>
+              <input type="password" class="form-control" name="password" #Pass="ngModel" [(ngModel)]="model.password"
+                placeholder="Password" required [ngClass]="{'invalid-textbox' :signInForm.submitted && !Pass.valid }">
+              <div *ngIf="signInForm.submitted && Pass.errors">
+                <label class="validation-message text-danger">Password is required</label>
+              </div>
+            </div>
+            <!-- Password form -->
+            <!-- Submit button -->
+            <div class="form-button">
+              <input type="submit" value="Login" class="btn btn-primary btn-submit">
+            </div>
+            <!-- Submit button -->
+            <!-- Error message's -->
+            <!-- <div class="alert alert-danger" *ngIf="serverErrorMessages">
+                   {{serverErrorMessages}} 
+                </div> -->
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

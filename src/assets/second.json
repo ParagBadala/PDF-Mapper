@@ -1,0 +1,46 @@
+{
+    "rx": [
+        {
+            "keyword":"Metformin",
+            "text":"Metformin"
+        },
+        
+        {
+            "keyword":"Atorvastatin",
+            "text":"Atorvastatin"
+        },
+        {
+            "keyword":"Lisinopril",
+            "text":"Lisinopril"
+        },
+        {
+            "keyword":"Alprazolam",
+            "text":"Alprazolam"
+        },
+        {
+            "keyword":"Dextroamphetamine-Amphetamine",
+            "text":"Dextroamphetamine-Amphetamine"
+        }
+    ],
+    "dx": [
+        {
+            "keyword":"generalized anxiety disorder",
+            "text":"generalized anxiety disorder"
+        },
+        {
+            "keyword":"Hypertension",
+            "text":"Hypertension"
+        },
+        {
+            "keyword":"Panic attack",
+            "text":"Panic attack"
+        },
+        {
+            "keyword":"Type 2 diabetes mellitus",
+            "text":"Type 2 diabetes mellitus"
+        }
+    ],
+    "reports": [
+        
+    ]
+}

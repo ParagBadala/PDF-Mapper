@@ -1,0 +1,51 @@
+<div class="">
+  <div class="container-fluid">
+    <div class="searchBar">
+      <input 
+        type="text" 
+        [(ngModel)]="searchText" 
+        placeholder="Search for Patient ID, name, policy number or provider"
+        style="width:100%;">
+    </div>
+    <table class="table table-hover" style="background-color:white;border: 1px solid #2c8dce;">
+        <thead>
+          <tr class="show-header">
+            <th>Patient ID</th>
+            <th>Patient Name</th>
+            <th>Policy Number</th>
+            <th>Provider Name</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr (click)="viewPdf(i)" *ngFor="let d of data | filter : {patient_id:searchText, name:searchText, provider:searchText, policy:searchText}; let  i=index">
+            <!-- <td>{{d.patient_id}}</td>
+            <td>{{d.name}}</td>
+            <td>{{d.policy}}</td>
+            <td>{{d.provider}}</td>
+            <td>
+              <button type="button" class="btn headerBtn" (click)="viewPdf(i)">
+                <i class="fa fa-file-text"></i>
+              </button>
+            </td> -->
+            <td data-th="Patient ID:  ">{{d.patient_id}}</td>
+            <td data-th="Patient Name:  ">{{d.name}}</td>
+            <td data-th="Policy Number:  ">{{d.policy}}</td>
+            <td data-th="Provider Name:  ">{{d.provider}}</td>
+            <td data-th="Action:  ">
+              <button type="button" class="btn headerBtn" (click)="viewPdf(i)">
+                <i class="fa fa-file-text"></i>
+              </button>
+            </td>
+            <hr />
+          </tr>
+        </tbody>
+      </table>
+    <div *ngIf="(data | filter : {patient_id:searchText, name:searchText, provider:searchText, policy:searchText})?.length === 0"
+    style="background-color:white;">
+      <td>
+        <h5>No results found</h5>
+      </td>
+    </div>
+  </div>
+</div>

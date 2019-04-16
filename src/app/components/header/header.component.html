@@ -1,0 +1,96 @@
+<!-- <div class="header">
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top customNav">
+    <a class="navbar-brand" style="padding-left:20px"><img id="logo" src="../../../assets/images/logo.png"></a>
+    <a class="nav-link" style="margin-left: 150px" *ngIf="loginStatus">
+      <div class="wordart italic-outline"><span class="text">Medical Summary Portal</span></div>
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar" *ngIf="loginStatus">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item" style="margin-top:5px">
+          <a class="nav-link"><span class="userName" style="color:black">
+              <p>Welcome Jane Doe (Role - Nurse)</p>
+            </span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link">
+            <button type="button" class="btn btn-danger headerBtn" (click)="signOut()">
+              <i class="fa fa-sign-out"></i>
+            </button>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</div> -->
+
+
+<!-- <nav class="navbar navbar-expand-lg navbar-light bg-light header">
+    <a class="navbar-brand">
+      <img id="logo" src="../../../assets/images/logo.png" width="180" height="40" style="margin-left: 30%" />
+    </a>
+    <a class="nav-link" id='titleName'>
+        <h4 class="wordart">
+          Medical Summary Portal
+        </h4>
+      </a>    
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav list-inline"  style='float: right'>
+        <li class="list-inline-item">
+          <a class="nav-link">
+            <span class="userName" style="color:black">
+              <p>Welcome Jane Doe (Role - Nurse)</p>
+            </span>
+          </a>
+        </li>
+        <li class="list-inline-item">
+          <a class="nav-link">
+            <button type="button" class="btn btn-danger headerBtn" (click)="signOut()">
+              <i class="fa fa-sign-out"></i>
+            </button>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>  -->
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <a class="navbar-brand imgLogo">
+      <img id="logo" src="../../../assets/images/logo.png" />
+    </a>
+    <button 
+      class="navbar-toggler" 
+      type="button" 
+      data-toggle="collapse" 
+      data-target="#navbarTogglerDemo01"
+      aria-controls="navbarTogglerDemo01" 
+      aria-expanded="false" 
+      aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div 
+      class="collapse navbar-collapse" 
+      id="navbarTogglerDemo01" *ngIf="loginStatus">
+      <div 
+        class="navbar-nav mr-auto mt-2 mt-lg-0"  
+        >
+        <h1 class="wordart">Medical Summary Portal</h1>
+      </div>
+      <div class="form-inline my-2 my-lg-0"  >
+        <span class="userName" style="color:black;">
+          <p style="font-size: 1vw">Welcome Jane Doe (Role - Nurse)</p>
+        </span> &nbsp;
+        <button type="button" class="btn btn-danger headerBtn" (click)="signOut()">
+          <i class="fa fa-sign-out"></i>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+
+  

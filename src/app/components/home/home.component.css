@@ -1,0 +1,86 @@
+@media only screen and (max-width: 1005px) {
+    .container-fluid {
+        margin-top: 8% !important; 
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .container-fluid {
+        margin-top: 20% !important; 
+    }
+  }
+
+.container-fluid {
+    margin-top: 6%;
+    background-color: #e0dfdf;
+}
+
+nav {
+    z-index: 100;
+    box-shadow: 0 3px 5px rgba(157, 161, 167, 0.3);  
+    letter-spacing: 0px;
+}
+
+a {
+    color: black;
+    cursor: pointer;
+}
+
+.customNav {
+    background-color: #fff;
+}
+
+.nav-right {
+  margin-right: 30px;   
+}
+
+.headerBtn {
+    box-shadow: 0 2px 3px rgba(250, 143, 139, 0.979);
+    font-size: 14px;
+    margin : 5px;
+}
+
+.searchBar {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    border: 1px solid #2c8dce;
+}
+
+.navbar {
+    overflow: hidden !important;
+}
+
+.home{
+    background-color: #b2b2b2;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+@media only screen and (max-width: 40em) {
+    thead th:not(:first-child) {
+        display: none;
+    }
+
+    td, th {
+        display: block;
+    }
+
+    td[data-th]:before  {
+        content: attr(data-th);
+    }
+
+    .show-header {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 1085px) {
+   .container-fluid {
+       margin-top: 8%
+   }
+}

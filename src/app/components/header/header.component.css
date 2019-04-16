@@ -1,0 +1,68 @@
+#logo {
+  width: 50%;
+}
+
+/*nav{
+   background-color: #ffffff;
+   border-bottom: 1px solid #2c8dce;
+} */
+
+.imgLogo {
+  margin-right: 13%
+}
+
+@media only screen and (max-width: 400px) {
+  .wordart {
+    /* font-size: 80%; */
+  }
+  .imgLogo {
+    width: 70%;
+  }
+}
+
+@media only screen and (max-width: 1130px) {
+  .imgLogo {
+    margin-right: 4%;
+  }
+}
+
+.wordart {
+    font-family: Arial, sans-serif;
+    font-size: 2vw;
+    font-weight: bold;
+    /* position: relative; */
+    /* z-index: 1; */
+    /* display: inline-block; */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    transform: scale(1,1);
+    -webkit-transform: scale(1, 1);
+    -moz-transform: scale(1, 1);
+    -o-transform: scale(1, 1);
+    -ms-transform: scale(1, 1);
+    /* font-family: Arial, sans-serif; */
+    /* font-weight: bold; */
+    color: #5198c7;
+    -webkit-text-stroke: 0.01em #30a2ee;
+    filter: progid:DXImageTransform.Microsoft.Glow(Color=#32a3ee, Strength=1);
+    text-shadow: 0.03em 0.03em 0 #39a7f0;
+  }
+
+  .wordart.italic-outline {
+    transform: scale(1,1);
+    -webkit-transform: scale(1, 1);
+    -moz-transform: scale(1, 1);
+    -o-transform: scale(1, 1);
+    -ms-transform: scale(1, 1);
+}
+
+.wordart.italic-outline .text {
+  
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  color: #5198c7;
+  -webkit-text-stroke: 0.01em #30a2ee;
+  filter: progid:DXImageTransform.Microsoft.Glow(Color=#32a3ee, Strength=1);
+  text-shadow: 0.03em 0.03em 0 #39a7f0;
+}
+

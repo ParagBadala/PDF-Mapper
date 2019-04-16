@@ -1,0 +1,76 @@
+{
+    "rx": [
+        {
+            "keyword":"Aspirin",
+            "text":"Aspirin"
+        },
+        {
+            "keyword":"Atenolol",
+            "text":"Atenolol"
+        },
+        {
+            "keyword":"Ibuprofen",
+            "text":"Ibuprofen"
+        },
+        {
+            "keyword":"Vardenafil",
+            "text":"Vardenafil "
+        }
+    ],
+    "dx": [
+        {
+            "keyword":"Pulmonary sarcoidosis",
+            "text":"Pulmonary sarcoidosis"
+        },
+        {
+            "keyword":"Hypertension",
+            "text":"Hypertension"
+        },
+        {
+            "keyword":"Hyperhidrosis",
+            "text":"Hyperhidrosis"
+        },
+        {
+            "keyword":"Arthritis",
+            "text":"Arthritis"
+        }
+    ],
+    "reports": [
+        {
+            "keyword": "12/23/13",
+            "text": "12/23/13: Presented for arm pain. Prescribed w/ Tramadol as needed"
+        },
+        {
+            "keyword": "07/24/14",
+            "text": "07/24/14: F/u for painful swelling on the right knee. Dxd with bursitis of right knee. Recommended Ibuprofen with food and can still use Tramadol as needed."
+        },
+        {
+            "keyword": "08/04/14",
+            "text": "08/04/14: Came here for evaluation of right knee pain. BP was 136/90. Dxd with right medial meniscus tear and right chondromalacia patella. Recommended to follow conservative treatment including PT and pain meds"
+        },
+        {
+            "keyword": "08/08/14",
+            "text": "08/08/14: C/o of excessive sweating of the scalp and forehead for at least 30 years. Dxd with hyperhidrosis. Recommended a trial of Botox"
+        },
+        {
+            "keyword": "10/01/14",
+            "text": "10/01/14: Dxd with tear of medial and lateral cartilage or meniscus of knee, osteoarthritis and chondromalacia. He elected to proceed with knee arthroscopy."
+        },
+        {
+            "keyword":"10/01/14",
+            "text":"10/01/14: Dxd with tear of medial and lateral cartilage or meniscus of knee, osteoarthritis and chondromalacia. He elected to proceed with knee arthroscopy."
+        },
+        {
+            "keyword":"10/09/14",
+            "text":"10/09/14: S/p arthroscopic surgery. Dxd with onychomycosis, OSA, hypertension and fatigue. Refer back to sleep center to reassess his C-pap, restarting Atenolol, which he did well within the past."
+        },
+        {
+            "keyword":"11/24/15",
+            "text":"11/24/15: Was here for left shoulder pain. Dxd with shoulder pain. Continue prn use of OTC Ibuprofen."
+        },
+        {
+            "keyword":"12/04/15",
+            "text":"12/04/15: Dxd with left shoulder subluxation and osteoarthritis of left shoulder. Recommended to under to PT as the first step. Continue to avoid aggravating activities and take OTC pain meds as needed."
+        }
+    ]
+}

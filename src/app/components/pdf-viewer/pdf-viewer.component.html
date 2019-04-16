@@ -1,0 +1,38 @@
+<div class="container-fluid">
+    <div class="row" style="margin-top: 5%">
+        <a (click)="navigateToPage('2')" style="cursor:pointer; margin-left: 10px;">Back</a>
+    </div>
+    <div class="row" style="height: 87vh;
+    overflow-y: hidden;">
+        <div class="col-md-2" style="border: 1px solid #2c8dce" *ngIf="data">
+            <span class="tag">Major RX:</span>
+            <div class="scrollit">
+                <div *ngFor="let d of data.rx">
+                    <a (click)="searchString(d.keyword)">{{d.text}}</a><br>
+                </div>
+            </div>
+            <br>
+
+            <span class="tag">Major DX:</span>
+            <div class="scrollit1" id="dx">
+                <div *ngFor="let d of data.dx">
+                    <a (click)="searchString(d.keyword)">{{d.text}}</a><br>
+                </div>
+            </div>
+            <br>
+
+            <span class="tag">Medical Records:</span>
+            <div class="scrollit2" id="record">
+                <p *ngFor="let d of data.reports">
+                    <a (click)="searchString(d.keyword)">{{d.text}}</a><br>
+                </p>
+            </div>
+        </div>
+        <div class="col-md-10">
+            <ngx-extended-pdf-viewer src="{{pdfSrc}}" height="88vh" useBrowserLocale="true" [showSidebarButton]="false"
+                [showSidebarOnLoad]="false" [showPagingButtons]="false" [showFindButton]="true" [showOpenFileButton]="false"
+                [showSecondaryToolbarButton]="false" [delayFirstView]="2000">
+            </ngx-extended-pdf-viewer>
+        </div>
+    </div>
+</div>
